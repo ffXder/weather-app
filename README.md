@@ -1,3 +1,3 @@
 # Weather App
 
-I created a weather app using React JS
+I created a weather app using React JS and Weather API
