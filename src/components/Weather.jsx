@@ -41,6 +41,13 @@ const Weather = () => {
         const response = await fetch(url); //fetch the API keys
         const data = await response.json(); 
         console.log(data);
+
+        //if the response is not okay it will show alert
+        if(!response.ok){
+            alert(data.message);
+            return;
+        }
+
         const icon = allIcons[data.weather[0].icon] || clear_icon; //get all the icons
         setWeatherData({
             humidity: data.main.humidity,
