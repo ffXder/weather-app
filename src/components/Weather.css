@@ -67,7 +67,7 @@
 /*For mobile screen*/
 @media (max-width: 600px) {
     .weather {
-        height: 90%;
+        height: 80%;
         width: 90%;
         padding: 30px;
     }
