@@ -63,3 +63,39 @@
     width: 26px;
     margin-top: 10px;
 }
+
+/*For mobile screen*/
+@media (max-width: 600px) {
+    .weather {
+        height: 70%;
+        width: 90%;
+        padding: 30px;
+    }
+
+    .temperature {
+        font-size: 50px;
+    }
+
+    .location {
+        font-size: 45px;
+    }
+
+    .weather-data {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-bar {
+        align-items: stretch;
+        
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
+
+    .search-bar img {
+        width: 50px;
+        padding: 8px;
+    }
+}

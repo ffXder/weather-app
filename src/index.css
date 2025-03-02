@@ -9,5 +9,13 @@
 .app {
   min-height: 100vh;
   display: grid;
-  background: #e2d4ff;
+  background: linear-gradient(rgb(120, 129, 204), rgb(11, 17, 46));
+}
+
+@media (min-width: 768px) {
+  .app {
+    display: row;
+    justify-content: space-around;
+    
+  }
 }
