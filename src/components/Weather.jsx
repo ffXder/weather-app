@@ -26,10 +26,11 @@ const Weather = () => {
             "01d": clear_icon,
             "01n": clear_icon,
             "02d": cloud_icon,
+            "02n": clear_icon,
             "03d": cloud_icon,
             "03n": cloud_icon,
             "04d": drizzle_icon,
-            "04d": drizzle_icon,
+            "04n": drizzle_icon,
             "09d": rain_icon,
             "09n": rain_icon,
             "10d": rain_icon,
@@ -69,7 +70,17 @@ const Weather = () => {
   return (
     <div className='weather'>
         <div className='search-bar'>
-            <input ref={inputRef} type="text" placeholder='Search'/>
+            <input 
+                ref={inputRef} 
+                type="text" 
+                placeholder='Search' 
+                //Added when pressing enter to search
+                onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                        console.log("Key Press: " + e.key);
+                        search(inputRef.current.value);
+                    }
+                }}/>
             <img src={search_icon} alt="" onClick={()=>search(inputRef.current.value)}/> 
         </div>
 
