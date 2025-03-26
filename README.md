@@ -11,4 +11,6 @@ Currently, two official plugins are available:
 
 I created a weather app using React JS and Weather API
 
+```sh
+$ npm run dev
 
